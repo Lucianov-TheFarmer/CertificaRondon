@@ -34,19 +34,22 @@
 
 ### 2. Usando o Código-Fonte
 1. Clone este repositório:
-   ```bash
-   git clone https://github.com/Lucianov-TheFarmer/CertificaRondon.git
-
-2. Instale as dependências
-pip install pandas comtypes pymupdf python-pptx reportlab tqdm
-
-3. Execute o script:
-python CertificaRondon.py
-
-4. Selecione os arquivos necessários (Dados.xlsx, certificado_rondon.pptx) e o local para salvar os certificados.
+  ```bash
+  git clone https://github.com/Lucianov-TheFarmer/CertificaRondon.git
+  ```
+2. Instale as dependências:
+  ```bash
+  pip install pandas comtypes pymupdf python-pptx reportlab tqdm
+  ```
+4. Execute o script:
+  ```bash
+  python CertificaRondon.py
+  ```
+5. Selecione os arquivos necessários (Dados.xlsx, certificado_rondon.pptx) e o local para salvar os certificados.
 
 ## Estrutura do repositório
 
+```
 CertificaRondon/
 ├── CertificaRondon.py          # Código-fonte principal
 ├── Dados.xlsx                  # Modelo de planilha Excel
@@ -55,6 +58,7 @@ CertificaRondon/
 ├── LICENSE                     # Licença MIT com cláusula de atribuição
 └── assets/
     └── logo_projeto_rondon.png # Logo do Projeto Rondon
+```
 
 ## Licença
 

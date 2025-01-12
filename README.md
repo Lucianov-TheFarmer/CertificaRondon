@@ -1,9 +1,13 @@
 # CertificaRondon
 
-![Logo do Projeto Rondon](assets/logo_projeto_rondon.png)
+<div align="center">
+  <img src="assets/logo_projeto_rondon.png" alt="Logo do Projeto Rondon" width="400">
+</div>
+
+<br>
 
 **CertificaRondon** é um software semiautomatizado desenvolvido para criar certificados personalizados para os participantes de oficinas do Projeto Rondon. Ele permite a inserção de informações em uma planilha Excel e a geração de certificados em PDF de forma prática e eficiente.
-
+<br>
 ## Funcionalidades
 
 - Importar dados (como coordenação, período, município, operação, oficinas, carga horária, etc.) de um arquivo Excel.

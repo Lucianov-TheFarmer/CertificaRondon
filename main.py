@@ -40,7 +40,7 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(script_dir)
 
 # Carregar dados do Excel
-df = pd.read_excel(dados_path)
+df = pd.read_excel(dados_path, parse_dates=True)  # Adicionar parse_dates=True para reconhecer datas
 df = df.fillna('')
 
 # Carregar o arquivo PowerPoint
@@ -65,7 +65,7 @@ for index, row in tqdm(df.iterrows(), total=len(df), desc="Gerando certificados 
                             text = text.replace('.HORAS', str(row['Horas']))
                             text = text.replace('.OPERAÇÃO', row['Operação'])
                             text = text.replace('.MUNICIPIO', row['Municipio'])
-                            text = text.replace('.PERIODO', row['Periodo'])
+                            text = text.replace('.PERIODO', row['Periodo'].strftime('%d/%m/%Y') if pd.notnull(row['Periodo']) else '')  # Formatar data
                             text = text.replace('.COORDENAÇÃO', row['Coordenação'])
                             run.text = text
     pptx_path = os.path.join(output_directory, f'Certificado_{index}.pptx')
